@@ -1,0 +1,18 @@
+﻿name: Health Check
+on:
+  schedule:
+    - cron: '*/14 * * * *'
+  workflow_dispatch:
+
+jobs:
+  health-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check API Health
+        run: |
+          echo "=== Health Check Log ===> API: https://your-api-url/health"
+          echo "Time: $(date)"
+          echo "Status: $(curl -s -o /dev/null -w "%{http_code}" https://your-api-url/health)"
+          echo "Response: $(curl -s https://your-api-url/health)"
+          echo "========================"

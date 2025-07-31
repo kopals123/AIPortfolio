@@ -1,0 +1,6 @@
+@AIPortfolio_HostAddress = http://localhost:5012
+
+GET {{AIPortfolio_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
