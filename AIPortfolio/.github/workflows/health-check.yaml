@@ -1,8 +1,9 @@
 ﻿name: Health Check
+
 on:
   schedule:
-    - cron: '*/14 * * * *'
-  workflow_dispatch:
+    - cron: '*/14 * * * *'  # Runs every 14 minutes
+  workflow_dispatch:        # Allows manual trigger from GitHub UI
 
 jobs:
   health-check:
@@ -11,8 +12,20 @@ jobs:
     steps:
       - name: Check API Health
         run: |
-          echo "=== Health Check Log ===> API: https://your-api-url/health"
+          echo "=== Health Check Log ==="
+          echo "API: https://aiportfolio-14uj.onrender.com/health"
           echo "Time: $(date)"
-          echo "Status: $(curl -s -o /dev/null -w "%{http_code}" https://your-api-url/health)"
-          echo "Response: $(curl -s https://your-api-url/health)"
-          echo "========================"
+
+          STATUS=$(curl -s -o /dev/null -w "%{http_code}" https://aiportfolio-14uj.onrender.com/health)
+          RESPONSE=$(curl -s https://aiportfolio-14uj.onrender.com/health)
+
+          echo "Status Code: $STATUS"
+          echo "Response: $RESPONSE"
+
+          if [ "$STATUS" -ne 200 ]; then
+            echo "Health check failed"
+            exit 1
+          else
+            echo "Health check passed"
+          fi
+
