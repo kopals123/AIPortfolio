@@ -28,3 +28,4 @@ jobs:
           else
             echo "Health check passed"
           fi
+          
