@@ -18,7 +18,8 @@ namespace AIPortfolio.Services
 
         public async Task<string> GetChatResponseAsync(ChatRequest request)
         {
-            var apiKey = _configuration["HuggingFace:ApiKey"];
+            var apiKey = Environment.GetEnvironmentVariable("HF_API_KEY")
+                 ?? _configuration["HuggingFace:ApiKey"];
             var model = _configuration["HuggingFace:Model"] ?? "HuggingFaceH4/zephyr-7b-beta";
 
             if (string.IsNullOrEmpty(apiKey))
