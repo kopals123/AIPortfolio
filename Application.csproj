@@ -1,0 +1,16 @@
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using AIPortfolio.Domain.Entities;
+
+namespace AIPortfolio.Domain.Interfaces
+{
+    /// <summary>
+    /// Repository interface for accessing projects and skill matrix data.
+    /// </summary>
+    public interface IProjectRepository
+    {
+        Task<IEnumerable<Project>> GetProjectsAsync();
+        Task<IEnumerable<Skill>> GetSkillsAsync();
+        Task<AboutProfile> GetAboutProfileAsync();
+    }
+}

@@ -1,0 +1,77 @@
+{
+  "about": {
+    "name": "Akhil Koppala",
+    "title": "Sr. Product Development Engineer / Full Stack Engineer",
+    "bio": "Result-oriented Software Engineer with 5+ years of experience designing, developing, and operating production-grade distributed systems and high-throughput web applications across logistics and fintech domains. Expert in building cloud-native microservices using C#, .NET 8, Apache Kafka, and PostgreSQL, combined with strong capabilities in modernizing frontend web user touchpoints using ReactJS and Vue.js. Proven track record in optimizing system health through robust operational metrics, proactive observability telemetry instrumentation, and cross-team collaboration to deliver scalable, end-to-end features.",
+    "location": "Bangalore, India",
+    "email": "Akhilkoppala123@gmail.com",
+    "github": "https://github.com/kopals123",
+    "linkedin": "https://www.linkedin.com/in/akhil-koppala-9b33a4176/",
+    "leetcode": "https://leetcode.com/u/akhilkoppala",
+    "resumeUrl": "/Akhil_Koppala_Resume.txt",
+    "avatar": ""
+  },
+  "skills": [
+    {
+      "category": "Backend & Languages",
+      "items": ["C#", ".NET 8/Core", "ASP.NET Core", "REST APIs", "Microservices Architecture", "Entity Framework (EF Core)", "SQL Server"]
+    },
+    {
+      "category": "Frontend & UI",
+      "items": ["ReactJS", "Vue.js", "Responsive Web Applications", "State Management", "JavaScript", "HTML5/CSS3"]
+    },
+    {
+      "category": "Infrastructure & Messaging",
+      "items": ["Apache Kafka", "RabbitMQ", "Kubernetes", "Docker", "Azure", "KEDA", "GitHub Actions", "Octopus Deploy"]
+    },
+    {
+      "category": "Observability & Databases",
+      "items": ["OpenTelemetry", "Datadog", "Grafana", "Prometheus", "Loki", "PostgreSQL", "Distributed Tracing", "System Health Metrics"]
+    }
+  ],
+  "experience": [
+    {
+      "role": "Software Engineer II",
+      "company": "Maersk",
+      "period": "Aug 2025 - Present",
+      "description": "Scaled and optimized CMS backend functionality using C# and PostgreSQL, ensuring loose coupling and microservice encapsulation in a high-volume event-streaming environment. Standardized KEDA ScaledObject templates across high-volume Kafka consumer microservices to handle dynamic resource scalability under peak loads. Diagnosed and resolved critical OOM incidents in .NET Kafka instances utilizing profiling tools, Grafana, and Loki. Audited telemetry dashboards and executed stress testing to optimize Kubernetes resource limits, mitigating risk and over-provisioning."
+    },
+    {
+      "role": "Software Engineer",
+      "company": "Worldline",
+      "period": "Aug 2024 - Aug 2025",
+      "description": "Developed and tested robust backend microservices supporting Dynamic Currency Conversion (DCC), ensuring high accuracy and low latency for financial transaction processing. Led the upgrade of legacy backend services to .NET 8, delivering immediate systemic improvements in memory footprint, system latency, and maintainability. Instrumented the ecosystem with OpenTelemetry and Datadog for end-to-end distributed tracing, establishing granular health metrics."
+    },
+    {
+      "role": "Full Stack Developer",
+      "company": "TSYS (Global Payments)",
+      "period": "Jan 2021 - Aug 2024",
+      "description": "Developed high-throughput REST APIs backed by C# and .NET, while modernizing enterprise payment user touchpoints and dashboards using ReactJS and Vue.js. Designed and executed a strategic proof-of-concept optimization that reduced financial transaction pipeline processing times from 8 minutes down to 2 minutes. Translated complex product user stories into actionable engineering tasks and enforced enterprise coding standards."
+    }
+  ],
+  "projects": [
+    {
+      "title": "AI Portfolio Website",
+      "subtitle": "Self-referential Full-Stack AI System",
+      "description": "A high-performance personal portfolio website engineered utilizing Clean Architecture principles, incorporating an intelligent AI chatbot assistant leveraging automated tools (Hugging Face Inference API / Gemini API) with customized backend rate-limiting middleware to manage free-tier constraints effectively, supported by fully automated CI/CD pipelines.",
+      "technologies": [".NET 8", "ASP.NET Core", "React", "Docker", "GitHub Actions", "Hugging Face API", "Gemini API"],
+      "github": "https://github.com/kopals123",
+      "demo": "https://aiportfolio-208820868245.asia-southeast1.run.app/",
+      "metrics": ["Clean Architecture & rate-limiting middleware", "Intelligent AI assistant integration", "Fully automated CI/CD deployment pipelines"]
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Microsoft Certified: Azure Fundamentals (AZ-900)",
+      "issuer": "Microsoft",
+      "date": "2024",
+      "credentialId": "AZ-900-COMPLETED"
+    },
+    {
+      "name": "Certification of Merit in Problem Solving Techniques",
+      "issuer": "Sathyabama Institute of Science and Technology",
+      "date": "2020",
+      "credentialId": "MERIT-PS-2020"
+    }
+  ]
+}

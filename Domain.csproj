@@ -1,0 +1,20 @@
+using System;
+using System.Collections.Generic;
+
+namespace AIPortfolio.Domain.Entities
+{
+    /// <summary>
+    /// Represents a featured technical project in the portfolio.
+    /// </summary>
+    public class Project
+    {
+        public Guid Id { get; set; } = Guid.NewGuid();
+        public string Title { get; set; } = string.Empty;
+        public string Subtitle { get; set; } = string.Empty;
+        public string Description { get; set; } = string.Empty;
+        public List<string> Technologies { get; set; } = new List<string>();
+        public string GithubUrl { get; set; } = string.Empty;
+        public string DemoUrl { get; set; } = string.Empty;
+        public List<string> Metrics { get; set; } = new List<string>();
+    }
+}

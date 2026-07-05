@@ -1,0 +1,13 @@
+services:
+  # Render Blueprints for one-click ASP.NET Core Deployment
+  - type: web
+    name: aiportfolio-backend
+    env: docker
+    dockerContext: ./backend
+    dockerfilePath: Dockerfile
+    plan: free
+    envVars:
+      - key: ASPNETCORE_ENVIRONMENT
+        value: Production
+      - key: HUGGING_FACE_API_KEY
+        sync: false # Set securely in Render dashboard

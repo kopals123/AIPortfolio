@@ -1,0 +1,68 @@
+using System;
+using AIPortfolio.API.Middleware;
+using AIPortfolio.Application.Services;
+using AIPortfolio.Domain.Interfaces;
+using AIPortfolio.Infrastructure.Repositories;
+using AIPortfolio.Infrastructure.Services;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+
+var builder = WebApplication.CreateBuilder(args);
+
+// Add services to the container.
+builder.Services.AddControllers();
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen(options =>
+{
+    options.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo
+    {
+        Title = "AIPortfolio API",
+        Version = "v1",
+        Description = "ASP.NET Core Web API backend for AIPortfolio, utilizing Clean Architecture."
+    });
+});
+
+// Configure CORS
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowFrontend", policy =>
+    {
+        policy.WithOrigins("http://localhost:3000", "https://aiportfolio-demo.vercel.app")
+              .AllowAnyHeader()
+              .AllowAnyMethod();
+    });
+});
+
+// Register Dependencies
+builder.Services.AddHttpClient();
+builder.Services.AddHttpClient<IHuggingFaceService, HuggingFaceService>();
+
+builder.Services.AddScoped<IProjectRepository, ProjectRepository>();
+builder.Services.AddScoped<IChatService, ChatService>();
+
+var app = builder.Build();
+
+// Configure the HTTP request pipeline.
+if (app.Environment.IsDevelopment() || true) // Enable swagger for review ease
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
+
+app.UseHttpsRedirection();
+
+// Use CORS
+app.UseCors("AllowFrontend");
+
+// Middlewares
+app.UseMiddleware<CorrelationIdMiddleware>();
+app.UseMiddleware<RequestLoggingMiddleware>();
+app.UseMiddleware<RateLimitingMiddleware>();
+app.UseMiddleware<ExceptionHandlingMiddleware>();
+
+app.UseAuthorization();
+
+app.MapControllers();
+
+app.Run();

@@ -1,0 +1,67 @@
+AKHIL KOPPALA
+Sr. Product Development Engineer / Full Stack Engineer
+Bangalore, India | +91 83197 10870 | akhilkoppala123@gmail.com
+LinkedIn: https://www.linkedin.com/in/akhil-koppala-9b33a4176/
+GitHub: https://github.com/kopals123
+
+=========================================
+PROFESSIONAL SUMMARY
+=========================================
+Result-oriented Software Engineer with 5+ years of experience designing, developing, and operating production-grade distributed systems and high-throughput web applications across logistics and fintech domains. Expert in building cloud-native microservices using C#, .NET 8, Apache Kafka, and PostgreSQL, combined with strong capabilities in modernizing frontend web user touchpoints using ReactJS and Vue.js. Proven track record in optimizing system health through robust operational metrics, proactive observability telemetry instrumentation, and cross-team collaboration to deliver scalable, end-to-end features.
+
+=========================================
+TECHNICAL SKILLS
+=========================================
+- Languages: C#, SQL, JavaScript, HTML5/CSS3
+- Backend & Data: .NET 8/Core, ASP.NET Core, REST APIs, Microservices Architecture, ORMs (Entity Framework), PostgreSQL, SQL Server
+- Frontend & UI: ReactJS, Vue.js, Responsive Web Applications, State Management
+- Messaging & Infra: Apache Kafka, RabbitMQ, Kubernetes, Docker, Azure, KEDA, GitHub Actions, Octopus Deploy
+- Observability: OpenTelemetry, Datadog, Grafana, Prometheus, Loki, Distributed Tracing, System Health Metrics
+
+=========================================
+PROFESSIONAL EXPERIENCE
+=========================================
+Software Engineer II -- Maersk
+Aug 2025 - Present | Bangalore, India
+* High-Throughput Microservices: Scaled and optimized CMS backend functionality using C# and PostgreSQL, ensuring loose coupling and microservice encapsulation in a high-volume event-streaming environment.
+* Event-Driven Auto-scaling: Standardized KEDA ScaledObject templates across high-volume Kafka consumer microservices, establishing critical operational metrics to handle dynamic resource scalability under peak loads.
+* Production Diagnostics & Stability: Swiftly diagnosed and resolved critical OutOfMemoryException (OOM) incidents in .NET Kafka instances utilizing profiling tools, Grafana, and Loki, minimizing MTTR during active on-call rotations.
+* Infrastructure Rightsizing: Audited telemetry dashboards and executed extensive stress testing to optimize Kubernetes resource requests/limits, successfully mitigating risk and reducing over-provisioning footprint.
+* Observability & Cross-Team Alignment: Implemented proactive Hedwig consumer lag alerts and engineered custom operational dashboards to monitor system health, collaborating across teams to resolve bottlenecks early.
+* Ownership & Runbooks: Owned secure environment configurations for complex UAT setups and authored comprehensive Confluence runbooks, driving operational excellence and team onboarding velocity.
+
+Software Engineer -- Worldline
+Aug 2024 - Aug 2025 | Bangalore, India
+* Microservices Development: Developed and tested robust backend microservices supporting Dynamic Currency Conversion (DCC), ensuring high accuracy and low latency for financial transaction processing.
+* Platform Modernization: Led the critical upgrade of legacy backend services to .NET 8, delivering immediate systemic improvements in memory footprint, system latency, and code maintainability.
+* Distributed Tracing: Instrumented ecosystem with OpenTelemetry and Datadog for end-to-end distributed tracing, establishing granular health metrics and lowering corporate production incident mitigation times.
+
+Full Stack Developer -- TSYS (Global Payments)
+Jan 2021 - Aug 2024 | Pune, India
+* Full-Stack Architecture: Developed high-throughput REST APIs backed by C# and .NET, while modernizing enterprise payment user touchpoints and dashboards using ReactJS and Vue.js.
+* Performance Optimization: Designed and executed a strategic proof-of-concept optimization that dramatically reduced financial transaction processing pipeline times from 8 minutes down to 2 minutes.
+* Cross-Functional Collaboration: Translated complex product user stories into actionable engineering tasks; collaborated closely with product managers and engineers to ship highly stable user-facing features.
+* Code Quality & Mentorship: Enforced rigorous enterprise-grade coding standards through structured peer code reviews, ensuring excellent defect resolution efficiency and system robustness.
+
+=========================================
+PROJECTS
+=========================================
+AI Portfolio Website
+Tech: .NET 8, ASP.NET Core, React, Docker, GitHub Actions, Hugging Face API
+* Engineered a full-stack website utilizing Clean Architecture principles, incorporating an intelligent AI chatbot assistant leveraging automated tools (Hugging Face Inference API).
+* Implemented customized backend rate-limiting middleware to manage free-tier constraints effectively, supported by fully automated CI/CD deployment pipelines.
+
+=========================================
+EDUCATION & CERTIFICATIONS
+=========================================
+Sathyabama Institute of Science and Technology
+Bachelor of Technology (Information Technology) | 2016 - 2020 | CGPA: 8.9/10
+* Microsoft Certified: Azure Fundamentals (AZ-900)
+* Certification of Merit in Problem Solving Techniques
+
+=========================================
+ACHIEVEMENTS & STRENGTHS
+=========================================
+* Employee of the Month (Maersk): Recognized for identifying and resolving multiple high-severity production incidents within a brief onboarding timeline.
+* Production Impact: Delivered systemic stability updates across enterprise Kafka consumers and event-driven systems.
+* Problem Solving: Active and consistent practitioner on LeetCode with strong algorithmic analytical skills.

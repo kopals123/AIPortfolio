@@ -1,0 +1,47 @@
+export interface AboutProfile {
+  name: string;
+  title: string;
+  bio: string;
+  location: string;
+  email: string;
+  github: string;
+  linkedin: string;
+  resumeUrl: string;
+  avatar: string;
+}
+
+export interface SkillCategory {
+  category: string;
+  items: string[];
+}
+
+export interface ExperienceItem {
+  role: string;
+  company: string;
+  period: string;
+  description: string;
+}
+
+export interface ProjectItem {
+  title: string;
+  subtitle: string;
+  description: string;
+  technologies: string[];
+  github: string;
+  demo: string;
+  metrics?: string[];
+}
+
+export interface CertificationItem {
+  name: string;
+  issuer: string;
+  date: string;
+  credentialId: string;
+}
+
+export interface ChatMessage {
+  id: string;
+  role: "user" | "assistant";
+  content: string;
+  timestamp: Date;
+}

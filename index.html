@@ -1,0 +1,29 @@
+using System.Threading.Tasks;
+using AIPortfolio.Application.DTOs;
+using AIPortfolio.Application.Services;
+using Microsoft.AspNetCore.Mvc;
+
+namespace AIPortfolio.API.Controllers
+{
+    public class ChatController : ApiControllerBase
+    {
+        private readonly IChatService _chatService;
+
+        public ChatController(IChatService chatService)
+        {
+            _chatService = chatService;
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> PostChat([FromBody] ChatRequestDto request)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            var response = await _chatService.GetChatResponseAsync(request);
+            return Ok(response);
+        }
+    }
+}

@@ -1,0 +1,23 @@
+using System.Threading.Tasks;
+using AIPortfolio.Domain.Interfaces;
+using Microsoft.AspNetCore.Mvc;
+
+namespace AIPortfolio.API.Controllers
+{
+    public class AboutController : ApiControllerBase
+    {
+        private readonly IProjectRepository _projectRepository;
+
+        public AboutController(IProjectRepository projectRepository)
+        {
+            _projectRepository = projectRepository;
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetAbout()
+        {
+            var profile = await _projectRepository.GetAboutProfileAsync();
+            return Ok(profile);
+        }
+    }
+}
